@@ -21,7 +21,7 @@
 	</servlet>
 	<servlet>
 		<servlet-name>SwaggerBootstrap</servlet-name>
-		<servlet-class>uk.co.aw125.ms.get.my.ip.bootstrap.Boostrap</servlet-class>
+		<servlet-class>uk.co.aw125.ms.get.my.ip.bootstrap.BootStrap</servlet-class>
 		<load-on-startup>2</load-on-startup>
 	</servlet>
 	<servlet-mapping>
