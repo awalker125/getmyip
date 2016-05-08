@@ -53,7 +53,7 @@ public class IPResource {
 			logEntry.append(key + "," + map.get(key));
 		}
 
-		logger.info(logEntry.toString());
+		logger.warn(logEntry.toString());
 
 		String ipAddress = httpServletRequest.getRemoteAddr();
 
