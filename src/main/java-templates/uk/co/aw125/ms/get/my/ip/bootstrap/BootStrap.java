@@ -27,7 +27,7 @@ public class BootStrap extends HttpServlet {
 		beanConfig.setVersion("${project.version}-${jenkins.build}");
 		//beanConfig.setSchemes(new String[] { "http" , "https"});
 		//beanConfig.setHost("localhost:8080");
-		beanConfig.setBasePath("/webapi");
+		beanConfig.setBasePath("/getmyip/webapi");
 		beanConfig.setResourcePackage("uk.co.aw125.ms.get.my.ip.resource");
 		beanConfig.setScan(true);
 	}
