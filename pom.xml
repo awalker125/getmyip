@@ -109,7 +109,7 @@
 						<version>2.1.1</version>
 						<configuration>
 							<outputDirectory>webapps</outputDirectory>
-							<warName>getmyip</warName>
+							<warName>ROOT</warName>
 						</configuration>
 					</plugin>
 					<plugin>
