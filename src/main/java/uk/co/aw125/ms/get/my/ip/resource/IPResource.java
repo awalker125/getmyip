@@ -49,8 +49,8 @@ public class IPResource {
 		MultivaluedMap<String, String> map = httpHeaders.getRequestHeaders();
 
 		for (String key : map.keySet()) {
-			logEntry.append("|");
-			logEntry.append(key + "," + map.get(key));
+			logEntry.append("\n");
+			logEntry.append(key + " " + map.get(key));
 		}
 
 		logger.warn(logEntry.toString());
