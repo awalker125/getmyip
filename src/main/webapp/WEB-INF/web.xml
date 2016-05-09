@@ -32,5 +32,40 @@
 		<welcome-file>/index.html</welcome-file>
 	</welcome-file-list>
 
+	<security-constraint>
+		<display-name>Private</display-name>
+		<web-resource-collection>
+			<web-resource-name>swagger</web-resource-name>
+			<url-pattern>/swagger-ui/*</url-pattern>
+			<url-pattern>/webapi/diagnostics/*</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>getmyip-role</role-name>
+		</auth-constraint>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+
+	<security-constraint>
+		<display-name>Public</display-name>
+		<web-resource-collection>
+			<web-resource-name>public</web-resource-name>
+			<url-pattern>/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+			<transport-guarantee>CONFIDENTIAL</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
+
+
+	<login-config>
+		<auth-method>BASIC</auth-method>
+		<realm-name>getmyip</realm-name>
+	</login-config>
+	<security-role>
+		<role-name>getmyip-role</role-name>
+	</security-role>
+
 </web-app>
 
