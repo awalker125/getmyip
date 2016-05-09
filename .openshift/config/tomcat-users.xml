@@ -41,7 +41,7 @@ For security reasons, no username in the default Realm (i.e. using conf/tomcat-u
 -->
 
   <role rolename="getmyip-role"/>
-  <user username="admin" password="BLUEblue12345" roles="getmyip-role"/>
+  <user username="admin" password="1aaa03a2d0807f82984db17671ddc78e64af1e4a" roles="getmyip-role"/>
 
 
 </tomcat-users>
